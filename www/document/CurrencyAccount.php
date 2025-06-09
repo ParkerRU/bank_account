@@ -2,16 +2,9 @@
 
 namespace document;
 
-use enum\Rate;
-
 // мультивалютный счет
 class CurrencyAccount
 {
-    public string $user_id;
-    public int $currency_type_id;
-    public float $value;
-    public bool $is_own;
-
     // Открыть новый счет
     public function create_account(string $user_id): void
     {
@@ -51,7 +44,6 @@ class CurrencyAccount
             $_SESSION['CurrencyAccount'][$user_id]['status'] != 'OPEN')
         {
             print_r('Счет пользователя ' . $user_id . ' не найден, либо был закрыт !!!' . PHP_EOL);
-            return;
         }
     }
 
@@ -86,7 +78,6 @@ class CurrencyAccount
         $this->check_currency_account($user_id);
         if (!isset($_SESSION['CurrencyAccount'][$user_id]['currency'][$rate['name']])) {
             print_r('Для пользователя ' . $user_id . ' валюта ' . $rate['name'] . ' не добавлена' . PHP_EOL);
-            return;
         }
     }
 
