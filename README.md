@@ -17,3 +17,5 @@ docker run -d -p 80:80 -v ./vhost.conf:/etc/nginx/conf.d/default.conf -v ./www:/
 Для запуска сценария необходимо открыть в браузере страничку localhost
 Предварительно необходимо создать сеть docker network-php
 `docker network create --driver bridge network-php`
+Тесты пока не писал, как раз вспоминаю, как их подключить
+В идеале дописать логгирование всех операций со счетом
