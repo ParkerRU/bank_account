@@ -5,17 +5,17 @@ namespace enum;
 class Rate
 {
     // рубли
-    const RUB = [
+    public const RUB = [
         'name' => 'RUB',
         'index' => 1,
     ];
     // евро
-    const EUR = [
+    public const EUR = [
         'name' => 'EUR',
         'index' => 2,
     ];
     // доллары
-    const USD = [
+    public const USD = [
         'name' => 'USD',
         'index' => 3,
     ];
