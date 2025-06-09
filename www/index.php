@@ -4,9 +4,9 @@ use enum\Rate;
 use document\CurrencyAccount;
 use reference\CurrencyRates;
 
-require_once /** @lang text */ '/www/reference/CurrencyRates.php';
-require_once /** @lang text */ '/www/document/CurrencyAccount.php';
-require_once /** @lang text */ '/www/enum/Rate.php';
+require_once /** @lang text */ '/app/reference/CurrencyRates.php';
+require_once /** @lang text */ '/app/document/CurrencyAccount.php';
+require_once /** @lang text */ '/app/enum/Rate.php';
 
 session_start();
 
